@@ -55,6 +55,7 @@ namespace OurFinaUWP
         async void Handle_Click(object sender, EventArgs e)
         {
             await SelectPicture();
+            //h
         }
     }
 }
