@@ -1,3 +1,5 @@
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -16,8 +18,8 @@ namespace OurFinaUWP
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            AppCenter.Start("uwp=14ba735a-5b04-4488-ab2f-1ef9e56e8de5;" + "android={Your Android App secret here}" + "ios={Your iOS App secret here}", typeof(Analytics));
+        }
 
 		protected override void OnSleep ()
 		{
